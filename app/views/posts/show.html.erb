@@ -1,6 +1,15 @@
+<%# 記事の詳細画面 %>
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @post %>
+
+<%# 画像が添付されている場合は表示 %>
+<% if @post.image.attached? %>
+  <div>
+    <%= image_tag @post.image %>
+  </div>
+<% end %>
 
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
