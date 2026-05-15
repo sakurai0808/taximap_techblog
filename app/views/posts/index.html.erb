@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>「東京都心タクマップ」開発ブログ</h1>
 
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to "Show this post", post %>
+      <%= link_to "この投稿を見る", post %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "新しい投稿をする", new_post_path %>
