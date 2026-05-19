@@ -9,9 +9,8 @@
     <%= post.created_at.strftime("%Y-%m-%d %H:%M") %>
   </p>
 
-  <p>
-    <strong>本文:</strong>
-    <%= post.body %>
-  </p>
+  <div class="blog-markdown-content">
+    <%= markdown(post.body) %>
+  </div>
 
 </div>
